@@ -11,13 +11,15 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      blue: colors.blue,
       gray: colors.gray,
       emerald: colors.emerald,
       indigo: colors.indigo,
       purple: colors.purple,
       yellow: colors.yellow,
-      'myorange': '#F19820',
-      'myblue': '#223e5c',
+      'primary': '#223e5c',
+      'second': '#F19820',
+      'third': '#305781',
     },
     extend: {
       fontFamily: {

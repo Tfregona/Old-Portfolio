@@ -1,21 +1,11 @@
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon, RssIcon } from "@heroicons/react/outline";
+import { Disclosure, } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
   { name: "Accueil", href: "/", current: false },
   { name: "Mon CV", href: "/cv", current: false },
   { name: "Mes projets", href: "/projects", current: false },
   { name: "Me contacter", href: "/contact", current: false },
-];
-
-const networks = [
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/tristan-fregona-27ba7320b",
-    current: false,
-  },
-  { name: "GitHub", href: "https://github.com/Tfregona", current: false },
 ];
 
 function classNames(...classes) {
