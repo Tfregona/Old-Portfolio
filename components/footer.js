@@ -16,11 +16,11 @@ export default function Footer() {
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="font-bold mb-3">Réseaux</p>
-          <div class="flex space-x-4">
+          <div className="flex space-x-4">
             <a
               href="https://linkedin.com/in/tristan-fregona-27ba7320b"
               target="_blank"
@@ -45,7 +45,7 @@ export default function Footer() {
                 focusable="false"
                 data-prefix="fab"
                 data-icon="linkedin-in"
-                class="w-3.5"
+                className="w-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -65,7 +65,7 @@ export default function Footer() {
                 focusable="false"
                 data-prefix="fab"
                 data-icon="github"
-                class="w-4"
+                className="w-4"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
               >
@@ -80,7 +80,7 @@ export default function Footer() {
       </div>
       <div className="bg-gray-800">
         <p className="mx-10 py-10 text-center border-t-2">
-          © 2022 Site créé avec ❤️ par{" "}
+          © 2022 Site réalisé avec ❤️ par{" "}
           <a className="font-bold" href="/">
             Fregona Tristan
           </a>
