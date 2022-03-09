@@ -49,16 +49,16 @@ export default function Home() {
         </div>
         <div>
           <Link href="/cv">
-            <a className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-flash hover:text-flash border-white text-white">
+            <button className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-flash hover:text-flash border-white text-white">
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
               <span className="relative">Voir mon CV</span>
-            </a>
+            </button>
           </Link>
           <Link href="/projects">
-            <a className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-flash hover:text-flash border-white text-white">
+            <button className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-flash hover:text-flash border-white text-white">
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-40 group-hover:h-40 opacity-10"></span>
               <span className="relative">Voir mes projets</span>
-            </a>
+            </button>
           </Link>
         </div>
       </div>
