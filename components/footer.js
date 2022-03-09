@@ -86,7 +86,7 @@ export default function Footer() {
           © 2022 Site réalisé par{" "}
           <a
             className="font-bold"
-            href="https://fregonatristan.heroku.com"
+            href="https://fregonatristan.herokuapp.com/"
             target="_blank"
             rel="noreferrer"
           >
