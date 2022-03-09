@@ -102,7 +102,7 @@ export const EPITECH = [
   },
   {
     img: "/projects/epicture.jpg",
-    title: "Epicture",
+    title: "Epicture presentation",
     description:
       "Application mobile en React Native de type Instagram avec l’API Imgur.",
     github: "https://github.com/Tfregona/Epicture",
