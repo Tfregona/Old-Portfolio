@@ -39,6 +39,7 @@ export default function Footer() {
             <a
               href="https://linkedin.com/in/tristan-fregona-27ba7320b"
               target="_blank"
+              rel="noreferrer"
               className="hover:text-gray-600"
             >
               <svg
@@ -59,6 +60,7 @@ export default function Footer() {
             <a
               href="https://github.com/Tfregona"
               target="_blank"
+              rel="noreferrer"
               className="hover:text-gray-600"
             >
               <svg

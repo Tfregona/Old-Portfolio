@@ -26,6 +26,7 @@ export default function Projects() {
             className="font-bold text-flash hover:text-flash/80"
             href="https://github.com/Tfregona"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Github{" "}

@@ -12,6 +12,7 @@ export default function ProjectCard({ item }) {
           <a
             href={item.github}
             target="_blank"
+            rel="noreferrer"
             className="py-2 px-4 bg-transparent hover:bg-flash font-semibold border border-white hover:border-transparent rounded"
           >
             GitHub
@@ -20,6 +21,7 @@ export default function ProjectCard({ item }) {
             <a
               href={item.live}
               target="_blank"
+              rel="noreferrer"
               className="py-2 px-4 bg-flash hover:bg-flash/90 font-semibold rounded"
             >
               Live
