@@ -37,7 +37,7 @@ export default function Home() {
         }}
       >
         <img
-          src="/img/pictures/cv1.jpg"
+          src="/img/pictures/cv.jpg"
           className="h-40 w-40 rounded-full object-cover mx-auto"
           alt="Tristan Fregona"
         />
@@ -68,7 +68,7 @@ export default function Home() {
         className="p-10 lg:px-40 xl:px-60 grid grid-cols-1 md:flex md:flex-row bg-primary"
       >
         <img
-          src="/img/pictures/tristan2.jpg"
+          src="/img/pictures/tristan_mb.jpg"
           className="h-60 w-60 object-cover mx-auto md:mt-4 border-2 border-transparent shadow-sm shadow-gray-800"
           alt="Tristan Fregona"
         />
