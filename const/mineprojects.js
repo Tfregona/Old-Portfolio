@@ -5,7 +5,7 @@ export const MINE = [
         description:
           "Mon site portfolio réalisé via Next. Vous vous trouvez dessus !",
         github: "https://github.com/Tfregona/Portfolio",
-        live: "ici",
+        live: "https://fregonatristan.heroku.com",
         techs: [
           {
             title: "Javascript",

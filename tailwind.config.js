@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -7,8 +7,8 @@ module.exports = {
   ],
   theme: {
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      transparent: "transparent",
+      current: "currentColor",
       black: colors.black,
       white: colors.white,
       blue: colors.blue,
@@ -17,14 +17,15 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.purple,
       yellow: colors.yellow,
-      'primary': '#223e5c',
-      'second': '#F19820',
-      'third': '#305781',
+      primary: "#161B22",
+      second: "#2a3441",
+      third: "#212934",
+      flash: "#F19820",
     },
     extend: {
       fontFamily: {
-        title: ['"Secular One"']
-      }
+        title: ['"Secular One"'],
+      },
     },
   },
   plugins: [],

@@ -3,21 +3,33 @@ import { faGhost, faGamepad, faJedi } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const Ilike = [
-    { icon: faGhost, intro: "Les romans d’horreur", description: "Lorem" },
+    {
+      icon: faGhost,
+      intro: "Les romans d’horreur",
+      description:
+        "Le genre horrifique est tellement large que cela ne veut presque rien dire. Ce sont particulièrement Stephen King, H.P. Lovecraft ou encore Junji Itō qui me font frissonner.",
+    },
     {
       icon: faGamepad,
       intro: "L’actualité high-tech et jeux vidéo",
-      description: "Lorem",
+      description:
+        "Passionné par le monde du jeu vidéo depuis tout petit, aujourd'hui, je suis avec ferveur l'actualité de cet empire du divertissement.",
     },
-    { icon: faJedi, intro: "La Pop et Web Culture", description: "Lorem" },
+    {
+      icon: faJedi,
+      intro: "La Pop et Web Culture",
+      description:
+        "La définition de toutes mes passions. Que cela soit livres, mangas ou jeux vidéo, toutes sont regroupées sous cette appellation et en tant que millénial elle fait partie de moi.",
+    },
   ];
   return (
-    <div className="bg-third text-white">
+    <div className="text-white">
       {/*Landing image*/}
       <div
         className="w-full text-center p-10"
         style={{
           backgroundImage: `url(/img/src/Mont_Blanc_Dark.jpg)`,
+          backgroundAttachment: "fixed",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -29,7 +41,7 @@ export default function Home() {
           alt="Tristan Fregona"
         />
         <div className="p-5">
-          <h1 className="text-4xl font-title text-second">Tristan Fregona</h1>
+          <h1 className="text-4xl font-title text-flash">Tristan Fregona</h1>
           <h2 className="text-xl font-bold">
             &#60; Développeur web étudiant /&#62;
           </h2>
@@ -37,14 +49,14 @@ export default function Home() {
         <div>
           <a
             href="/cv"
-            className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-second hover:text-second border-white text-white"
+            className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-flash hover:text-flash border-white text-white"
           >
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
             <span className="relative">Voir mon CV</span>
           </a>
           <a
             href="/projects"
-            className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-second hover:text-second border-white text-white"
+            className="rounded overflow-hidden relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-2 active:border-white active:shadow-none hover:border-flash hover:text-flash border-white text-white"
           >
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-40 group-hover:h-40 opacity-10"></span>
             <span className="relative">Voir mes projets</span>
@@ -54,49 +66,60 @@ export default function Home() {
       {/*Who am I*/}
       <div
         id="about"
-        className="grid grid-cols-1 p-10 md:px-32 md:flex md:flex-row bg-primary"
+        className="p-10 lg:px-40 xl:px-60 grid grid-cols-1 md:flex md:flex-row bg-primary"
       >
         <img
           src="/img/pictures/tristan2.jpg"
           className="h-60 w-60 object-cover mx-auto md:mt-4 border-2 border-transparent shadow-sm shadow-gray-800"
           alt="Tristan Fregona"
         />
-        <div className="px-5 flex flex-col space-y-4">
+        <div className="md:px-4 flex flex-col space-y-4 text-justify break-words">
           <div>
             <p className="text-2xl font-bold">À propos de moi</p>
-            <div className="h-[0.1rem] w-10 bg-second -mt-1 absolute"></div>
+            <div className="h-[0.1rem] w-10 bg-flash -mt-1 absolute"></div>
           </div>
-          <p className="break-words">
-            Après avoir obtenu ma licence en information et communication j'ai
+          <p>
+            Après avoir obtenu ma licence en information et communication, j'ai
             décidé de m'orienter vers le développement web. C'est pourquoi en
-            octobre 2021 j'ai intégré la Coding Academy pendant 18 semaines. Le
-            mot clé de cette formation Epitech est 'apprendre à apprendre'.
-            C'est à dire que tous nos projets ont été réalisés de manière
-            autonaume, résoudre les problèmes par soi même. AJOUTER LOCALISATION
+            octobre 2021, j'ai intégré la Coding Academy pendant 18 semaines. Le
+            mot-clé de cette formation Epitech est d'
+            <span className="font-semibold">apprendre à apprendre</span>.
+            C'est-à-dire que tous nos projets ont été réalisés de manière
+            autonome. Résoudre les problèmes par soi-même, c'est comme cela que
+            j'ai avancé dans ce milieu qu'est le{" "}
+            <span className="font-semibold text-flash">développement</span>.
           </p>
-          <p className="p-2 border-2 border-second rounded-md">
-            Curieux de nature, ce milieu m'a tout de suite passioné. Souhaitant
-            me rapprocher de la définition du développeur "full-stack" les
-            technologies "front" comme "back" m'interessent tout autant.
+          <p>
+            Je suis actuellement retourné dans mon département de cœur, la
+            Haute-Savoie et plus précisément dans le Chablais.
+          </p>
+          <p className="p-2 border-2 border-flash">
+            Curieux de nature, ce milieu m'a tout de suite passionné. C'est
+            pourquoi je souhaite me rapprocher de la définition du développeur
+            "full-stack". Les technologies "Front" comme "Back" m'intéressent
+            les unes comme les autres.
           </p>
         </div>
       </div>
       {/*I like*/}
-      <div className="p-10 md:px-32">
+      <div className="bg-second p-10 lg:px-40 xl:px-60">
         <div className="mb-5">
           <p className="text-2xl font-bold">J'aime ❤️</p>
-          <div className="h-[0.1rem] w-10 bg-second -mt-1 absolute"></div>
+          <div className="h-[0.1rem] w-10 bg-flash -mt-1 absolute"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {Ilike.map((item) => (
-            <div className="p-3 border-2 border-second rounded-md">
+            <div
+              key={item.intro}
+              className="p-3 border-2 border-gray-500 rounded-md group hover:animate-pulse"
+            >
               <FontAwesomeIcon
-                className="text-second"
+                className="text-flash"
                 icon={item.icon}
                 style={{ fontSize: 50 }}
               />
               <p className="font-bold">{item.intro}</p>
-              <p>{item.description}</p>
+              <p className="text-justify break-words">{item.description}</p>
             </div>
           ))}
         </div>

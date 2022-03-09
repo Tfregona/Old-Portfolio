@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
     <footer className="text-gray-200">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-10 bg-gray-800">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-10 bg-primary">
         <div>
           <p className="font-bold mb-3">Contact</p>
-          <div className="flex space-x-1">
-            <p className="hover:ml-3 hover:transition-all hover:duration-500 duration-500">
+          <div className="flex space-x-1 group">
+            <p className="hover:ml-3 transition-all duration-500">
               Mail -{" "}
               <a href="mailto:tristan.fregona@epitech.eu">
                 tristan.fregona@epitech.eu
@@ -13,6 +13,7 @@ export default function Footer() {
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              className="hidden invisible sm:block group-hover:visible transition-all duration-500"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -78,9 +79,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800">
+      <div className="bg-primary">
         <p className="mx-10 py-10 text-center border-t-2">
-          © 2022 Site réalisé avec ❤️ par{" "}
+          © 2022 Site réalisé par{" "}
           <a className="font-bold" href="/">
             Fregona Tristan
           </a>

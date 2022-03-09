@@ -14,16 +14,16 @@ export default function Projects() {
     "Projets chez Epitech": EpitechProjects,
   });
   return (
-    <div className="">
+    <div className="text-white">
       {/* Landing banner */}
-      <div className="text-center md:p-10 bg-primary text-white">
-        <p className="text-4xl font-title text-second">Mes projets</p>
+      <div className="p-10 lg:px-40 xl:px-60 text-center bg-second">
+        <p className="text-4xl font-title text-flash">Mes projets</p>
         <p className="text-xl">
-          Que ce soit dans mes formations ou des projets personnels, je les ai
+          Que ce soit dans mes formations ou mes projets personnels, je les ai
           tous présenté ici. <br />
           Chacun est accessible sur mon profil
           <a
-            className="font-bold text-second"
+            className="font-bold text-flash hover:text-flash/80"
             href="https://github.com/Tfregona"
             target="_blank"
           >
@@ -38,19 +38,19 @@ export default function Projects() {
         </p>
       </div>
       {/* Projects buckle */}
-      <div className="w-full p-3 md:p-10 xl:px-40 ">
+      <div className="p-5 lg:px-40 xl:px-60 bg-third">
         <Tab.Group>
-          <Tab.List className="flex p-1 space-x-1 bg-blue-900/20 rounded-xl">
+          <Tab.List className="flex p-1 space-x-1 bg-primary rounded-xl">
             {Object.keys(categories).map((category) => (
               <Tab
                 key={category}
                 className={({ selected }) =>
                   classNames(
-                    "w-full py-2.5 text-sm leading-5 font-medium text-second rounded-lg",
-                    "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-second ring-white ring-opacity-60",
+                    "w-full py-2.5 text-sm leading-5 font-medium text-flash rounded-lg",
+                    "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-flash ring-second ring-opacity-60",
                     selected
-                      ? "bg-white shadow"
-                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      ? "bg-second shadow"
+                      : "text-gray-100 hover:bg-white/[0.12] hover:text-white"
                   )
                 }
               >
@@ -62,7 +62,7 @@ export default function Projects() {
             {Object.values(categories).map((item, idx) => (
               <Tab.Panel
                 key={idx}
-                className={classNames("bg-white rounded-xl p-3")}
+                className={classNames("p-3 bg-second rounded-xl")}
               >
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   {item.map((item) => (
