@@ -84,7 +84,12 @@ export default function Footer() {
       <div className="bg-primary">
         <p className="mx-10 py-10 text-center border-t-2">
           © 2022 Site réalisé par{" "}
-          <a className="font-bold" href="/">
+          <a
+            className="font-bold"
+            href="https://fregonatristan.heroku.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Fregona Tristan
           </a>
         </p>
