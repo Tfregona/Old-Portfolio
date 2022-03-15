@@ -7,7 +7,7 @@ export default function Cv() {
             🚧 Cette page est en cours de construction... 🚧
           </p>
           <p className="text-xl mb-3">
-            En attendant, vous pouvez télécharger mon CV juste en dessous !
+            En attendant, vous pouvez télécharger mon CV en pdf juste en dessous !
           </p>
           <a
             href="/docs/TRISTAN_FREGONA_CV.pdf"

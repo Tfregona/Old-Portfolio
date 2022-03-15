@@ -1,6 +1,6 @@
 export const MINE = [
     {
-        img: "/img/src/Mont_Blanc.jpg",
+        img: "/img/src/Mont_Blanc_Dark.jpeg",
         title: "Portfolio",
         description:
           "Mon site portfolio réalisé via Next. Vous vous trouvez dessus !",

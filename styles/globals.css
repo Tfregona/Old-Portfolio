@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,4 +14,20 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+#about_content {
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #F19820, transparent);
+}
+
+#about_image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: 0.5s;
+}
+
+#about_image:hover {
+  transform: rotate(0);
 }

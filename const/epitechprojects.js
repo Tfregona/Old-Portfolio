@@ -25,7 +25,7 @@ export const EPITECH = [
     ],
   },
   {
-    img: "/projects/yowl.jpg",
+    img: "/projects/yowl.jpeg",
     title: "YOWL",
     description:
       "Projet final du tronc commun. Forum à l’aide du Framework Laravel avec base de donnée en SQL, session utilisateur, pages dynamiques sur différents sujets et possibilité de commenter ces dernières.",
@@ -46,7 +46,7 @@ export const EPITECH = [
     ],
   },
   {
-    img: "/projects/postit.jpg",
+    img: "/projects/postit.jpeg",
     title: "Post-it",
     description:
       "Application web en Vue afin de créer un site de type Trello. API fournie par l'école.",
@@ -63,7 +63,7 @@ export const EPITECH = [
     ],
   },
   {
-    img: "/projects/twp.jpg",
+    img: "/projects/twp.jpeg",
     title: "TWP",
     description:
       "Application web en Vue afin de créer un site de type Trello. API REST Wordpress.",
@@ -84,7 +84,7 @@ export const EPITECH = [
     ],
   },
   {
-    img: "/projects/dashboard.jpg",
+    img: "/projects/dashboard.jpeg",
     title: "Dashboard",
     description:
       "Application web à l’aide de React de type Dashboard, plusieurs requêtes de différentes API pour réaliser des widgets (Google, Spotify, OpenWeatherMap, … ).",
@@ -101,7 +101,7 @@ export const EPITECH = [
     ],
   },
   {
-    img: "/projects/epicture.jpg",
+    img: "/projects/epicture.jpeg",
     title: "Epicture presentation",
     description:
       "Application mobile en React Native de type Instagram avec l’API Imgur.",
@@ -118,7 +118,7 @@ export const EPITECH = [
     ],
   },
   {
-    img: "/projects/mrt.jpg",
+    img: "/projects/mrt.jpeg",
     title: "My Rotten Tomatoes",
     description: "Site web via Next de type AlloCiné avec l’API TheMovieDB.",
     github: "https://github.com/Tfregona/My_Rotten_Tomatoes",

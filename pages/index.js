@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGhost, faGamepad, faJedi } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { BiGame } from "react-icons/bi";
+import { MdOutlineVideogameAsset } from "react-icons/md";
+import { RiGhost2Line } from "react-icons/ri";
 
 export default function Home() {
   const Ilike = [
@@ -23,13 +26,14 @@ export default function Home() {
         "La définition de toutes mes passions. Que cela soit livres, mangas ou jeux vidéo, toutes sont regroupées sous cette appellation et en tant que millénial elle fait partie de moi.",
     },
   ];
+  const icons = [RiGhost2Line, MdOutlineVideogameAsset, BiGame];
   return (
     <div className="text-white">
       {/*Landing image*/}
       <div
         className="w-full text-center p-10"
         style={{
-          backgroundImage: `url(/img/src/Mont_Blanc_Dark.jpg)`,
+          backgroundImage: `url(/img/src/Mont_Blanc_Dark.jpeg)`,
           backgroundAttachment: "fixed",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -37,7 +41,7 @@ export default function Home() {
         }}
       >
         <img
-          src="/img/pictures/cv.jpg"
+          src="/img/pictures/cv.jpeg"
           className="h-40 w-40 rounded-full object-cover mx-auto"
           alt="Tristan Fregona"
         />
@@ -65,14 +69,18 @@ export default function Home() {
       {/*Who am I*/}
       <div
         id="about"
-        className="p-10 lg:px-40 xl:px-60 grid grid-cols-1 md:flex md:flex-row bg-primary"
+        className="p-10 lg:px-40 xl:px-60 grid grid-cols-1 md:grid-cols-3 bg-primary"
       >
-        <img
-          src="/img/pictures/tristan_mb.jpg"
-          className="h-60 w-60 object-cover mx-auto md:mt-4 border-2 border-transparent shadow-sm shadow-gray-800"
-          alt="Tristan Fregona"
-        />
-        <div className="md:px-4 flex flex-col space-y-4 text-justify break-words">
+        <div className="my-4 md:px-4">
+          <div id="about_content">
+            <img
+              id="about_image"
+              src="/img/pictures/tristan_mb.jpg"
+              alt="Tristan Fregona"
+            />
+          </div>
+        </div>
+        <div className="md:px-4 col-span-2 flex flex-col space-y-4 text-justify break-words">
           <div>
             <p className="text-2xl font-bold">À propos de moi</p>
             <div className="h-[0.1rem] w-10 bg-flash -mt-1 absolute"></div>
@@ -107,20 +115,19 @@ export default function Home() {
           <div className="h-[0.1rem] w-10 bg-flash -mt-1 absolute"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {Ilike.map((item) => (
-            <div
-              key={item.intro}
-              className="p-3 border-2 border-gray-500 rounded-md group hover:animate-pulse"
-            >
-              <FontAwesomeIcon
-                className="text-flash"
-                icon={item.icon}
-                style={{ fontSize: 50 }}
-              />
-              <p className="font-bold">{item.intro}</p>
-              <p className="text-justify break-words">{item.description}</p>
-            </div>
-          ))}
+          {Ilike.map((item, idx) => {
+            const Icon = icons[idx];
+            return (
+              <div
+                key={item.intro}
+                className="p-3 border-2 border-gray-500 rounded-md group hover:animate-pulse"
+              >
+                <Icon className="text-flash w-16 h-16" />
+                <p className="font-bold">{item.intro}</p>
+                <p className="text-justify break-words">{item.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
