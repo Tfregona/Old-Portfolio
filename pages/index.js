@@ -93,7 +93,7 @@ export default function Home() {
             <span className="font-semibold">apprendre à apprendre</span>.
             C'est-à-dire que tous nos projets ont été réalisés de manière
             autonome. Résoudre les problèmes par soi-même, c'est comme cela que
-            j'ai avancé dans ce milieu qu'est le{" "}
+            j'ai amélioré mes compétences dans le {" "}
             <span className="font-semibold text-flash">développement</span>.
           </p>
           <p>
