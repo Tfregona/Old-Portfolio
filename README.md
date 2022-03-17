@@ -8,6 +8,6 @@ It is developped in Next and and hosted at Heroku.
 <br>
 It contains all my projects and my CV.
 
-```
+***
 [Tristan Fregona - Portfolio](https://fregonatristan.herokuapp.com/)
-```
+***
