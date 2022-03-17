@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Fregona Tristan - Portfolio</title>
-        <meta name="description" content="Portfolio Fregona Tristan" />
+        <title>Tristan Fregona - Portfolio</title>
+        <meta name="description" content="Portfolio Tristan Fregona" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

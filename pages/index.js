@@ -71,7 +71,7 @@ export default function Home() {
         id="about"
         className="p-10 lg:px-40 xl:px-60 grid grid-cols-1 md:grid-cols-3 bg-primary"
       >
-        <div className="my-4 md:px-4">
+        <div className="my-4 px-14 sm:px-24 md:px-10">
           <div id="about_content">
             <img
               id="about_image"
