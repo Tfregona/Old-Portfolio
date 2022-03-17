@@ -24,7 +24,9 @@ export default function Home() {
                   <rect x="3" y="5" width="18" height="14" rx="2"></rect>
                   <polyline points="3 7 12 13 21 7"></polyline>
                 </svg>
-                <p className="pb-4">tristan.fregona@epitech.eu</p>
+                <a href="mailto:tristan.fregona@epitech.eu" className="pb-4">
+                  tristan.fregona@epitech.eu
+                </a>
               </div>
               <div className="hover:text-flash hover:animate-pulse group">
                 <svg

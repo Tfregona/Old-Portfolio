@@ -3,7 +3,7 @@ export const MINE = [
     img: "/projects/dta.jpeg",
     title: "Dans ton âme",
     description:
-      "Un site vitrine/blogging pour une étudiante en sophrologie. Réalisé en next, le design et l'optimisation de l'affichage sont mes priorités sur ce projet en cours de développement.",
+      "Un site vitrine/blogging pour une étudiante en sophrologie. Réalisé avec Next, le design et l'optimisation de l'affichage sont mes priorités sur ce projet en cours de développement.",
     github: "https://github.com/Tfregona/Dans_Ton_Ame",
     live: "https://danstoname.herokuapp.com/",
     techs: [
